@@ -1,0 +1,395 @@
+/* Llamar a una fuente desde Google FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Sofia&display=swap');
+
+/* Reseteo de la página para empezar desde un punto más neutral o cero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Remover el subrayado y el color morado de nuestra barra de navegación */
+nav ul li {
+    font-family: poppins;
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Primer grid, para juntar NAV + Searchbar + Logo + Letras del Logo dentro de header*/
+.arriba {
+    background-color: #3A863F;
+    display: grid;
+    height: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo-izquierda search"
+        "logo-izquierda nav";
+}
+
+/* #arriba-galeria */
+
+
+/* Grid dentro de grid para lograr unir letras e imagen del logo */
+.logo-junto {
+    display: grid;
+    grid-area: logo-izquierda;
+    margin-left: 10em;
+    grid-template-columns: 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-template-areas: "logo_posicion logo_letras";
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: search;
+    width: 10em;
+    margin-left: 1.5em;
+}
+
+/* Mi objetivo fue dejar el logo o la pequeña imagen a un lado de mis letras de logo */
+#logo-posicion {
+    grid-area: logo_posicion;
+    margin-right: 0;
+}
+
+/* Las letras del logo */
+#logo-letras {
+    grid-area: logo_letras;
+}
+
+header div a {
+    font-family: 'Sofia', cursive;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Grid para mostrar una lista de sugerencias para restaurantes y un aside de comentarios */
+#main-index {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    padding-left: 10em;
+    grid-template-areas: "banner banner banner"
+        "sugerencias sugerencias2 comentarios"
+        "sugerencias3 sugerencias4 comentarios";
+}
+
+#sugerencias {
+    font-family: poppins;
+    grid-area: sugerencias;
+}
+
+#sugerencias2 {
+    font-family: poppins;
+    grid-area: sugerencias2;
+}
+
+#sugerencias3 {
+    font-family: poppins;
+    grid-area: sugerencias3;
+}
+
+#sugerencias4 {
+    font-family: poppins;
+    grid-area: sugerencias4;
+}
+
+#comentarios {
+    font-family: poppins;
+    grid-area: comentarios;
+}
+
+.margin-section {
+    margin-top: 60px;
+    padding: 25px;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+/* body {
+    background-image: url("../images/foodbackground.jpg");
+} */
+
+footer {
+    font-family: poppins;
+    color: white;
+    background-color: #3A863F;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.banner {
+    background-image: url(../images/gastronomia.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 150px;
+    padding-top: 50px;
+    min-height: 400px;
+    grid-area: banner
+}
+
+.banner-text {
+    font-family: poppins;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    font-size: 3em;
+}
+
+/* Al no tener una imagen con opacidad, tuve que agregar 2 bloques de codigo para lograr agregar una imagen con esa posición, y ponerle el "opacity" */
+main {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+main::after {
+    content: "";
+    background: url(../images/foodbackground.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#main-galeria {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    padding-left: 4em;
+    grid-template-areas: "banner banner banner"
+        "container-galeria1 container-galeria2 container-galeria3"
+        "container-galeria4 container-galeria4 container-galeria4";
+}
+
+#imagen1 {
+    grid-area: imagen1;
+}
+
+#imagen2 {
+    grid-area: imagen2;
+}
+
+#imagen3 {
+    grid-area: imagen3;
+}
+
+#imagen4 {
+    grid-area: imagen4;
+}
+
+#container-galeria1 {
+    grid-area: container-galeria1;
+}
+
+#container-galeria2 {
+    grid-area: container-galeria2;
+}
+
+#container-galeria3 {
+    grid-area: container-galeria3;
+}
+
+#container-galeria4 {
+    grid-area: container-galeria4;
+}
+
+
+.subtitulo-imagen {
+    font-family: poppins;
+    align-items: center;
+}
+
+
+
+.boton_footer {
+    float: right;
+    margin-right: 30px;
+}
+
+.titulo-restaurante {
+    font-family: poppins;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.texto-restaurante {
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    display: inline-block;
+    font-family: poppins;
+}
+
+.pegartodo {
+    display: inline-block;
+}
+
+
+.formulario {
+    font-family: poppins;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.texto-formulario {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    display: inline-block;
+    font-family: poppins;
+}
+
+fieldset {
+    border: 0;
+}
+
+.formulario-dias {
+    list-style: none;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+main div fieldset label {
+    display: block;
+    margin: 10px;
+}
+
+main div fieldset input {
+    margin-left: 15px;
+    display: inline;
+}
+
+main div fieldset h3 {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .arriba {
+        background-color: #3A863F;
+        display: grid;
+        height: 100px;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 14px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo-izquierda search"
+            "nav nav";
+    }
+
+    .logo-junto {
+        display: grid;
+        grid-area: logo-izquierda;
+        margin-left: 5em;
+        grid-template-columns: 50px;
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-template-areas: "logo_posicion logo_letras";
+    }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    #main-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding-left: 2em;
+        grid-template-areas: "banner banner"
+            "sugerencias sugerencias2"
+            "sugerencias3 sugerencias4"
+            "comentarios comentarios";
+    }
+
+    .banner {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .margin-section {
+        font-size: 15px;
+    }
+
+    #main-galeria {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding-left: 2em;
+        padding-right: 2em;
+        grid-template-areas: "banner banner"
+            "container-galeria1 container-galeria2"
+            "container-galeria3 container-galeria4";
+    }
+
+    #imagen1 {
+        height: 33vw;
+        width: 33vw;
+    }
+
+    #imagen2 {
+        height: 33vw;
+        width: 33vw;
+    }
+
+    #imagen3 {
+        height: 33vw;
+        width: 33vw;
+    }
+
+    #imagen4 {
+        height: 33vw;
+        width: 33vw;
+    }
+}
+

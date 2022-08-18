@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fooders Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header id="arriba">
+        <!--  LOGO -->
+        <a href="../index.html">
+            <section class="logo-position"><img src="../images/menu.png" alt="Imagen de Logo" width="50px"
+                    height="50px">
+            </section>
+        </a>
+
+        <!-- Titulo y una clase para el mismo con una fuente desde Google Fonts -->
+        <a class="logo-enlace" href="../index.html">
+            <h1 class="logo">Fooders.</h1>
+        </a>
+
+        <nav>
+
+            <ul>
+                <!-- Enlaces Relavtivos -->
+
+                <li> <a href="../index.html">Inicio</a> </li>
+                <li> <a href="./galeria.html">Galería</a></li>
+                <li> <a href="./lista_de_restaurantes.html">Lista de Restaurantes</a></li>
+                <li> <a href="./comentarios_y_experiencias.html">Comentarios y Experiencias</a> </li>
+                <li> <a href="./pagina_de_contacto.html">Contáctanos para agregar tu propio Restaurante</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- Primer sección en donde el usuario puede solicitar agregar su Restaurante -->
+    <main>
+        <div>
+            <fieldset class="texto-formulario">
+
+                <h2>Registro para aparecer en el website</h2>
+
+                <label for="Nombre">Ingresa tu nombre completo:</label>
+                <input type="text" placeholder="Ingresa tu nombre completo" id="Nombre" required>
+
+
+
+                <label for="NombreEmpresa">Ingresa el nombre de tu restaurante:</label>
+                <input type="text" placeholder="Ingresa el nombre de tu restaurante" id="NombreEmpresa" required>
+
+
+
+                <label for="NombreEmpresa">Ingresa la dirección de tu restaurante:</label>
+                <input type="text" placeholder="Ingresa el nombre de tu empresa" id="NombreEmpresa" required>
+
+
+
+                <label for="Correo">Ingresa correo electrónico:</label>
+                <input type="text" placeholder="Ingresa correo electrónico" id="Correo" required>
+
+
+
+                <h3>Horarios que maneja su restaurante</h3>
+
+                <label for="Horario1">Hora de apertura</label>
+                <input id="Horario1" name="hora_nac" type="time" required>
+                <label for="Horario2">Hora de cierre</label>
+                <input id="Horario2" name="hora_nac" type="time" required>
+
+                <p>Días de la semana que su restaurante se encuentra abierto:</p>
+
+                <ul class="formulario-dias">
+                    <li>
+                        <label for="Lunes"><input id="Lunes" name="dias" type="checkbox" value="Lunes" required>
+                            Lunes
+
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="Martes"><input id="Martes" name="dias" type="checkbox" value="Martes" required>
+                            Martes
+
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="Miercoles"><input id="Miercoles" name="dias" type="checkbox" value="Miercoles"
+                                required>
+                            Miercoles
+
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Jueves"><input id="Jueves" name="dias" type="checkbox" value="Jueves" required>
+                            Jueves
+
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Viernes"><input id="Viernes" name="dias" type="checkbox" value="Viernes" required>
+                            Viernes
+
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Sábado"><input id="Sábado" name="dias" type="checkbox" value="Sábado" required>
+                            Sábado
+
+                        </label>
+                    </li>
+                    <li>
+                        <label for="Domingo"><input id="Domingo" name="dias" type="checkbox" value="Domingo" required>
+                            Domingo
+
+                        </label>
+                    </li>
+                </ul>
+
+
+
+            </fieldset>
+        </div>
+
+
+        <!-- Segunda Sección en donde el usuario puede contactar para sugerencias o comentarios hacia el website no los restaurantes integrados -->
+
+        <div>
+
+            <fieldset class="texto-formulario">
+
+                <h3>Contacto para sugerencias (hacia Fooders)</h3>
+
+                <label for="Comentarios">Deja un comentario</label>
+
+
+
+                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"
+                    placeholder="Déjanos un comentario (Opcional)"></textarea>
+
+                <input id="enviar" type="submit" value="Enviar">
+
+
+            </fieldset>
+        </div>
+    </main>
+
+
+    <footer>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html"> Regresar a la página principal</a></li>
+                <li class="boton_footer"><a href="#arriba">Volver arriba</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
