@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Sofia&display=swap"
     rel="stylesheet">
-
   <title>Fooders Homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -42,11 +42,16 @@
       <ul>
         <!-- Enlaces Relavtivos -->
 
-        <li> <a href="./index.html">Inicio</a> </li>
-        <li> <a href="./pages/galeria.html">Galería</a> </li>
-        <li> <a href="./pages/lista_de_restaurantes.html">Restaurantes</a></li>
-        <li> <a href="./pages/comentarios_y_experiencias.html">Comentarios</a> </li>
-        <li> <a href="./pages/pagina_de_contacto.html">Contactacto</a></li>
+        <li> <button class="button-nav" style="vertical-align:middle"><a
+              href="./index.html"><span>Inicio</span></a></button> </li>
+        <li> <button class="button-nav" style="vertical-align:middle"><a
+              href="./pages/galeria.html"><span>Galeria</span></a></button> </li>
+        <li> <button class="button-nav" style="vertical-align:middle"><a
+              href="./pages/lista_de_restaurantes.html"><span>Restaurantes</span></a></button> </li>
+        <li> <button class="button-nav" style="vertical-align:middle"><a
+              href="./pages/comentarios_y_experiencias.html"><span>Comentarios</span></a></button> </li>
+        <li> <button class="button-nav" style="vertical-align:middle"><a
+              href="./pages/pagina_de_contacto.html"><span>Contacto</span></a></button> </li>
       </ul>
 
     </nav>
@@ -55,12 +60,13 @@
 
   <main class="margin-section" id="main-index">
 
-    <section class="banner">
+    <!-- Aplicacion de Libreria de animate.style para el banner -->
+    <section class="banner animate__animated animate__rubberBand">
       <h3 class="banner-text">¿Cuál es tu antojo hoy?</h3>
     </section>
 
 
-    <section id="sugerencias">
+    <div id="sugerencias">
 
       <h2>Restaurante 1</h2>
 
@@ -68,14 +74,12 @@
         atque debitis, esse aspernatur recusandae consectetur? Iure fugiat voluptatem dolores et nobis odit impedit?
         Eum fugit et nemo id soluta, ducimus reiciendis quis ex, iure earum dolor sunt ad repellat laboriosam rerum
         cum,
-        necessitatibus odio veritatis inventore voluptatibus molestiae quasi consequuntur eveniet. Temporibus,
-        quisquam.
 
 
       </p>
-    </section>
+    </div>
 
-    <section id="sugerencias2">
+    <div id="sugerencias2">
 
       <h2>Restaurante 2</h2>
 
@@ -83,14 +87,12 @@
         atque debitis, esse aspernatur recusandae consectetur? Iure fugiat voluptatem dolores et nobis odit impedit?
         Eum fugit et nemo id soluta, ducimus reiciendis quis ex, iure earum dolor sunt ad repellat laboriosam rerum
         cum,
-        necessitatibus odio veritatis inventore voluptatibus molestiae quasi consequuntur eveniet. Temporibus,
-        quisquam.
 
 
       </p>
-    </section>
+    </div>
 
-    <section id="sugerencias3">
+    <div id="sugerencias3">
 
       <h2>Restaurante 3</h2>
 
@@ -98,14 +100,12 @@
         atque debitis, esse aspernatur recusandae consectetur? Iure fugiat voluptatem dolores et nobis odit impedit?
         Eum fugit et nemo id soluta, ducimus reiciendis quis ex, iure earum dolor sunt ad repellat laboriosam rerum
         cum,
-        necessitatibus odio veritatis inventore voluptatibus molestiae quasi consequuntur eveniet. Temporibus,
-        quisquam.
 
 
       </p>
-    </section>
+    </div>
 
-    <section id="sugerencias4">
+    <div id="sugerencias4">
 
       <h2>Restaurante 4</h2>
 
@@ -113,26 +113,21 @@
         atque debitis, esse aspernatur recusandae consectetur? Iure fugiat voluptatem dolores et nobis odit impedit?
         Eum fugit et nemo id soluta, ducimus reiciendis quis ex, iure earum dolor sunt ad repellat laboriosam rerum
         cum,
-        necessitatibus odio veritatis inventore voluptatibus molestiae quasi consequuntur eveniet. Temporibus,
-        quisquam.
-
 
       </p>
-    </section>
+    </div>
 
-    <section id="comentarios">
+    <div id="comentarios">
       <h3>Comentarios</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit quibusdam magnam sunt ex, amet, vel
         atque debitis, esse aspernatur recusandae consectetur? Iure fugiat voluptatem dolores et nobis odit impedit?
         Eum fugit et nemo id soluta, ducimus reiciendis quis ex, iure earum dolor sunt ad repellat laboriosam rerum
         cum,
-        necessitatibus odio veritatis inventore voluptatibus molestiae quasi consequuntur eveniet. Temporibus,
-        quisquam.
 
 
 
       </p>
-    </section>
+    </div>
 
 
 
